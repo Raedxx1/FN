@@ -2,9 +2,9 @@
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style>
     .button {
-        background-color: #003263;
+        background-color: #2f00ff;
         border-radius: 5px;
-        color: white;
+        color: rgb(255, 251, 0);
         padding: .5em;
         text-decoration: none;
         height: 100%;
@@ -14,14 +14,14 @@
     
     .button:focus,
     .button:hover {
-        background-color: #007bff;
-        color: White;
+        background-color: #d9ff00;
+        color: rgb(17, 0, 255);
     }
     
     .titlehead {
-        background-color: #003263;
+        background-color: #1100ff;
         border-radius: 5px;
-        color: white;
+        color: rgb(217, 255, 0);
         padding: .5em;
         text-decoration: none;
         text-align: center;
@@ -32,8 +32,8 @@
     
     .titlehead:focus,
     .titlehead:hover {
-        background-color: #007bff;
-        color: White;
+        background-color: #ffe600;
+        color: rgb(38, 0, 255);
     }
     
     .bg {
@@ -51,7 +51,7 @@
     </title>
     <script>
         function loadcomplete() {
-            document.getElementById("progress").innerHTML = sessionStorage.Queue + " Loaded Successfully !!";
+            document.getElementById("progress").innerHTML = sessionStorage.Queue + " تمت بنجاح !!";
             sessionStorage.Queue = "";
         }
     </script>
@@ -80,7 +80,7 @@
         window.applicationCache.oncached = function() {
             document.getElementById("progress").innerHTML = "Page Cached Successfully!!";
             setTimeout(function() {
-                document.getElementById("progress").innerHTML = "Turn Off the Internet & Reopen the Page to Run the Exploit!!";
+                document.getElementById("progress").innerHTML = " اطفئ الانترنت بسرعة";
             }, 1500);
         };
     </script>
@@ -88,11 +88,10 @@
     <hr><br>
     <input type="hidden" id="psip" value="localhost" />
     <div>
-        <table align="center" style="width:600px;margin-top:50px;">
-            <tr>
-                <td align="center" id="exploit" colspan="2">
-                    <a href="#" class="button" onclick="goldhen(); return false" style="width:70%">تهكير</a>
-                </td>
+        <table align="center" style="width:500px;margin-top:30px;">
+            <td align="center" id="exploit" colspan="2">
+                <a href="#" class="button" onclick="goldhen(); return false" style="width:70%">تهكير</a>
+            </td>
             </tr>
             <tr>
                 <td><br/></td>
@@ -102,15 +101,16 @@
                     <hr><br></td>
             </tr>
             <tr>
-                <td align="center" colspan="2"><a href="#" class="button" onclick="app2usb(); return false" style="width:43%">App2USB</a>
-                    <a href="#" class="button" onclick="appdumper(); return false" style="width:43%">App Dumper</a></td>
+                <td align="center" colspan="2">
+                    <a href="#" class="button" onclick="app2usb(); return false" style="width:43%">USB نسخ الى</a>
+                    <a href="#" class="button" onclick="appdumper(); return false" style="width:43%">الدمبر</a></td>
             </tr>
             <tr>
                 <td><br/></td>
             </tr>
             <tr>
-                <td align="center" colspan="2"><a href="#" class="button" onclick="disableupdates();return false" style="width:43%">Disable Updates</a>
-                    <a href="#" class="button" onclick="enableupdates(); return false" style="width:43%">Enable Updates</a></td>
+                <td align="center" colspan="2"><a href="#" class="button" onclick="disableupdates();return false" style="width:43%">تعطيل التحديثات</a>
+                    <a href="#" class="button" onclick="enableupdates(); return false" style="width:43%">تمكين التحديثات</a></td>
             </tr>
             <tr>
                 <td><br/></td>
@@ -135,9 +135,11 @@
 
             </tr>
             <tr>
-                <td align="center" colspan="3"><a href="#" class="button" onclick="ps4debug(); return false" style="width:29%">PS4 Debug</a>
+                <td align="center" colspan="3"><a href="#" class="button" onclick="ps4debug(); return false" style="width:29%">تصحيح أخطاء PS4</a>
                     <a href="#" class="button" onclick="webrte(); return false" style="width:29%">WebRTE</a>
-                    <a href="#" class="button" onclick="permanentuart(); return false" style="width:29%">Permanent UART</a></td>
+                    <a href="#" class="button" onclick="permanentuart(); return false" style="width:29%">UART الدائم
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td><br/></td>
